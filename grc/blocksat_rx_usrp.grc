@@ -1111,6 +1111,143 @@
     </param>
   </block>
   <block>
+    <key>blocks_float_to_uchar</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(920, 1192)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_float_to_uchar_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_int_to_float</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value></value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(792, 1188)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_int_to_float_0</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>scale</key>
+      <value>1</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
+    <key>blocks_multiply_const_vxx</key>
+    <param>
+      <key>alias</key>
+      <value></value>
+    </param>
+    <param>
+      <key>comment</key>
+      <value>Change bit order</value>
+    </param>
+    <param>
+      <key>const</key>
+      <value>complex(-1,0)</value>
+    </param>
+    <param>
+      <key>affinity</key>
+      <value></value>
+    </param>
+    <param>
+      <key>_enabled</key>
+      <value>True</value>
+    </param>
+    <param>
+      <key>_coordinate</key>
+      <value>(232, 1188)</value>
+    </param>
+    <param>
+      <key>_rotation</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>id</key>
+      <value>blocks_multiply_const_pre_soft_dec</value>
+    </param>
+    <param>
+      <key>type</key>
+      <value>complex</value>
+    </param>
+    <param>
+      <key>maxoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>minoutbuf</key>
+      <value>0</value>
+    </param>
+    <param>
+      <key>vlen</key>
+      <value>1</value>
+    </param>
+  </block>
+  <block>
     <key>blocks_null_sink</key>
     <param>
       <key>alias</key>
@@ -1299,49 +1436,6 @@
     </param>
   </block>
   <block>
-    <key>blocks_unpack_k_bits_bb</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value>Output single-bit char</value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(456, 1188)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>blocks_unpack_k_bits_bb_0</value>
-    </param>
-    <param>
-      <key>k</key>
-      <value>constellation_obj.bits_per_symbol()</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
-    </param>
-  </block>
-  <block>
     <key>blocksat_da_carrier_phase_rec</key>
     <param>
       <key>alias</key>
@@ -1483,7 +1577,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1248, 1156)</value>
+      <value>(1400, 1156)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1522,7 +1616,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(736, 1172)</value>
+      <value>(608, 1172)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1726,14 +1820,14 @@
     </param>
   </block>
   <block>
-    <key>digital_constellation_decoder_cb</key>
+    <key>digital_constellation_soft_decoder_cf</key>
     <param>
       <key>alias</key>
       <value></value>
     </param>
     <param>
       <key>comment</key>
-      <value>QPSK/BPSK Decoder</value>
+      <value>Soft QPSK/BPSK Decoder</value>
     </param>
     <param>
       <key>constellation</key>
@@ -1749,7 +1843,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(232, 1188)</value>
+      <value>(384, 1188)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1757,7 +1851,7 @@
     </param>
     <param>
       <key>id</key>
-      <value>digital_constellation_decoder_cb_0</value>
+      <value>digital_constellation_soft_decoder_cf_0</value>
     </param>
     <param>
       <key>maxoutbuf</key>
@@ -1839,7 +1933,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(920, 1172)</value>
+      <value>(1072, 1172)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -1927,49 +2021,6 @@
     <param>
       <key>type</key>
       <value>cc</value>
-    </param>
-  </block>
-  <block>
-    <key>digital_map_bb</key>
-    <param>
-      <key>alias</key>
-      <value></value>
-    </param>
-    <param>
-      <key>comment</key>
-      <value></value>
-    </param>
-    <param>
-      <key>affinity</key>
-      <value></value>
-    </param>
-    <param>
-      <key>_enabled</key>
-      <value>1</value>
-    </param>
-    <param>
-      <key>_coordinate</key>
-      <value>(616, 1188)</value>
-    </param>
-    <param>
-      <key>_rotation</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>id</key>
-      <value>digital_map_bb_0_0_0</value>
-    </param>
-    <param>
-      <key>map</key>
-      <value>[1,- 1]</value>
-    </param>
-    <param>
-      <key>maxoutbuf</key>
-      <value>0</value>
-    </param>
-    <param>
-      <key>minoutbuf</key>
-      <value>0</value>
     </param>
   </block>
   <block>
@@ -2224,7 +2275,7 @@
     </param>
     <param>
       <key>_coordinate</key>
-      <value>(1064, 1188)</value>
+      <value>(1216, 1188)</value>
     </param>
     <param>
       <key>_rotation</key>
@@ -4682,14 +4733,26 @@
     <sink_key>1</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_rms_xx_1</source_block_id>
-    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
+    <source_block_id>blocks_float_to_uchar_0</source_block_id>
+    <sink_block_id>digital_descrambler_bb_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>blocks_unpack_k_bits_bb_0</source_block_id>
-    <sink_block_id>digital_map_bb_0_0_0</sink_block_id>
+    <source_block_id>blocks_int_to_float_0</source_block_id>
+    <sink_block_id>blocks_float_to_uchar_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_multiply_const_pre_soft_dec</source_block_id>
+    <sink_block_id>digital_constellation_soft_decoder_cf_0</sink_block_id>
+    <source_key>0</source_key>
+    <sink_key>0</sink_key>
+  </connection>
+  <connection>
+    <source_block_id>blocks_rms_xx_1</source_block_id>
+    <sink_block_id>blocks_float_to_complex_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4713,13 +4776,13 @@
   </connection>
   <connection>
     <source_block_id>blocksat_turbo_decoder_0</source_block_id>
-    <sink_block_id>digital_descrambler_bb_0</sink_block_id>
+    <sink_block_id>blocks_int_to_float_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
   <connection>
-    <source_block_id>digital_constellation_decoder_cb_0</source_block_id>
-    <sink_block_id>blocks_unpack_k_bits_bb_0</sink_block_id>
+    <source_block_id>digital_constellation_soft_decoder_cf_0</source_block_id>
+    <sink_block_id>blocksat_turbo_decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4744,12 +4807,6 @@
   <connection>
     <source_block_id>digital_fll_band_edge_cc_1</source_block_id>
     <sink_block_id>digital_pfb_clock_sync_xxx_0</sink_block_id>
-    <source_key>0</source_key>
-    <sink_key>0</sink_key>
-  </connection>
-  <connection>
-    <source_block_id>digital_map_bb_0_0_0</source_block_id>
-    <sink_block_id>blocksat_turbo_decoder_0</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
@@ -4815,7 +4872,7 @@
   </connection>
   <connection>
     <source_block_id>virtual_source_5</source_block_id>
-    <sink_block_id>digital_constellation_decoder_cb_0</sink_block_id>
+    <sink_block_id>blocks_multiply_const_pre_soft_dec</sink_block_id>
     <source_key>0</source_key>
     <sink_key>0</sink_key>
   </connection>
